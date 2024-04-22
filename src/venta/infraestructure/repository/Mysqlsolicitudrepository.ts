@@ -4,7 +4,7 @@ import { query } from "../../../db/db";
 
 export class MysqlVentaRepository implements VentaRepository{
     async createVenta(id_venta: number, contenido: string, precio: number): Promise<Solicitud | null> {
-    const sql =  "INSERT INTO ventas (id_venta, contenido, precio) VALUES (?,?,?)";
+    const sql =  "INSERT INTO solicitudes (id_solicitud, contenido, precio) VALUES (?,?,?)";
     const parametros: any[] = [id_venta, contenido, precio];
     try {
         const [result]: any = await query(sql, parametros);        
