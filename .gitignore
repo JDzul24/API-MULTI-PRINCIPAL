@@ -1,0 +1,5 @@
+node_modules
+dist
+sonar-project.properties
+.scannerwork
+.env
