@@ -7,8 +7,8 @@ export class NotificationNewVenta implements INotificationNewVenta{
     private exch: any;
     
     constructor() {
-        this.url = "amqp://carlos:12345@34.229.31.98";
-        this.exch = "event";
+        this.url = "amqp://michi:michi123@52.205.249.137";
+        this.exch = "Prueba2";
     }
 
     async sendNotification(solicitud: Solicitud): Promise<boolean> {
